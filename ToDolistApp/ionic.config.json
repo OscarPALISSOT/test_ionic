@@ -1,0 +1,7 @@
+{
+  "name": "ToDolistApp",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "react"
+}
