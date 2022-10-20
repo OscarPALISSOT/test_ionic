@@ -2,7 +2,7 @@ import React from "react";
 import {IonContent, IonHeader, IonPage, IonTitle, IonToolbar} from '@ionic/react';
 import Header from "../../components/header";
 
-const Home: React.FC = () => {
+const error404: React.FC = () => {
     return (
         <IonPage>
             <Header/>
@@ -13,4 +13,4 @@ const Home: React.FC = () => {
     );
 };
 
-export default Home;
+export default error404;
