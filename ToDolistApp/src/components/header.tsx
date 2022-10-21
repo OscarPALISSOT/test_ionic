@@ -1,14 +1,15 @@
 import React from "react";
-import {IonHeader, IonTitle, IonToolbar, IonBackButton, IonButtons, IonButton} from '@ionic/react';
+import {IonHeader, IonTitle, IonToolbar, IonIcon, IonButtons, IonButton} from '@ionic/react';
 import BackBtnComponent from './backbtn'
-import { RouteComponentProps } from "react-router";
-
+import HomeBtnComponent from './homebtn'
+import DarkModeToogleComponent from "./DarkModeToogle";
 const HeaderComponent: React.FC = () => {
     return (
         <IonHeader>
             <IonToolbar>
                 <BackBtnComponent/>
-                <IonButton fill="clear" color="dark" routerLink="/"><IonTitle><strong>ToDoApp</strong></IonTitle></IonButton>
+                <HomeBtnComponent/>
+                <DarkModeToogleComponent/>
             </IonToolbar>
         </IonHeader>
     );
