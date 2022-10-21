@@ -1,10 +1,10 @@
 import React from "react";
 import {IonTitle} from '@ionic/react';
 
-const headTitleComponent: React.FC = () => {
+const HeadTitleComponent: React.FC = () => {
     return (
-            <IonTitle>ToDoApp</IonTitle>
-            );
+            <IonTitle><strong>ToDoApp</strong></IonTitle>
+    );
 };
 
-export default headTitleComponent;
+export default HeadTitleComponent;

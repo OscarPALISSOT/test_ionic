@@ -3,12 +3,17 @@ import {IonHeader, IonTitle, IonToolbar, IonIcon, IonButtons, IonButton} from '@
 import BackBtnComponent from './backbtn'
 import HomeBtnComponent from './homebtn'
 import DarkModeToogleComponent from "./DarkModeToogle";
+import HeadTitleComponent from "./HeadTitle";
+
 const HeaderComponent: React.FC = () => {
     return (
         <IonHeader>
             <IonToolbar>
-                <BackBtnComponent/>
-                <HomeBtnComponent/>
+                <IonButtons slot="start">
+                    <BackBtnComponent/>
+                    <HeadTitleComponent/>
+                    <HomeBtnComponent/>
+                </IonButtons>
                 <DarkModeToogleComponent/>
             </IonToolbar>
         </IonHeader>

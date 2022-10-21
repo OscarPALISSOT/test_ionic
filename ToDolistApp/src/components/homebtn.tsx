@@ -5,7 +5,7 @@ import {home} from 'ionicons/icons';
 const HomeBtnComponent: React.FC = () => {
     return (
         <IonButtons>
-            <IonButton fill="clear" color="dark" routerLink="/" routerDirection="back" slot="end">
+            <IonButton fill="clear" color="dark" routerLink="/" routerDirection="back">
                 <IonIcon icon={home}/>
             </IonButton>
         </IonButtons>

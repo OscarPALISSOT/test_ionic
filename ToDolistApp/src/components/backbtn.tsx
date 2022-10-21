@@ -12,10 +12,8 @@ const BackBtnComponent: React.FC = () => {
 
 const BackBtn: React.FC = () => {
     return (
-            <IonButtons slot="start">
-                <IonBackButton text="" defaultHref="/"/>
-            </IonButtons>
-            );
+        <IonBackButton defaultHref="/"/>
+    );
 };
 
 export default BackBtnComponent;
