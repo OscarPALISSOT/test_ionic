@@ -1,11 +1,11 @@
 import React from "react";
 import {IonContent, IonHeader, IonPage, IonTitle, IonToolbar} from '@ionic/react';
-import Header from "../../components/header";
+import HeaderComponent from "../../components/header";
 
 const error404: React.FC = () => {
     return (
         <IonPage>
-            <Header/>
+            <HeaderComponent hideBackButton="true"/>
             <IonContent fullscreen>
                 <h1>404</h1>
             </IonContent>

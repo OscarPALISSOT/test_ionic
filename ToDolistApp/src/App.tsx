@@ -1,5 +1,5 @@
 import {Route} from 'react-router-dom';
-import {IonApp, IonRouterOutlet, setupIonicReact, IonNav} from '@ionic/react';
+import {IonApp, IonRouterOutlet, setupIonicReact} from '@ionic/react';
 import {IonReactRouter} from '@ionic/react-router';
 import Home from './pages/Home';
 import error404 from './pages/404';

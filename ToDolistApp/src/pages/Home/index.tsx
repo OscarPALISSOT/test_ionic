@@ -1,14 +1,14 @@
 import React from "react";
 import {IonContent, IonButton, IonPage, IonNavLink, IonItem, IonLabel} from '@ionic/react';
 import './Home.css';
-import Header from '../../components/header'
+import HeaderComponent from '../../components/header'
 
 
 
 const Home: React.FC = () => {
     return (
         <IonPage>
-            <Header/>
+            <HeaderComponent hideBackButton="false" />
             <IonContent>
                 <div className="container">
                     <strong>Hello world</strong>

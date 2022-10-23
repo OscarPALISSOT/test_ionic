@@ -1,20 +1,22 @@
 import React from "react";
-import {IonHeader, IonTitle, IonToolbar, IonIcon, IonButtons, IonButton} from '@ionic/react';
+import {IonHeader, IonToolbar, IonButtons} from '@ionic/react';
 import BackBtnComponent from './backbtn'
 import HomeBtnComponent from './homebtn'
 import DarkModeToogleComponent from "./DarkModeToogle";
 import HeadTitleComponent from "./HeadTitle";
 
-const HeaderComponent: React.FC = () => {
+const HeaderComponent: React.FC<any> = (props: {hideBackButton: boolean}) => {
     return (
         <IonHeader>
             <IonToolbar>
                 <IonButtons slot="start">
-                    <BackBtnComponent/>
+                    {props.hideBackButton ? <BackBtnComponent/> : null}
                     <HeadTitleComponent/>
                     <HomeBtnComponent/>
                 </IonButtons>
-                <DarkModeToogleComponent/>
+                <IonButtons slot="end">
+                    <DarkModeToogleComponent/>
+                </IonButtons>
             </IonToolbar>
         </IonHeader>
     );
