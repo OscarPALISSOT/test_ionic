@@ -14,7 +14,7 @@ const HeaderComponent: React.FC = () => {
                 </IonButtons>
                 <HeadTitleComponent/>
                 <IonButtons slot="start" class="ion-margin-horizontal">
-                    {window.location.pathname != '/' && <HomeBtnComponent/>}
+                    {window.location.pathname !== '/' && <HomeBtnComponent/>}
                 </IonButtons>
                 <IonButtons slot="end">
                     <DarkModeToogleComponent/>
