@@ -13,7 +13,7 @@ const HeaderComponent: React.FC = () => {
                     <BackBtnComponent/>
                 </IonButtons>
                 <HeadTitleComponent/>
-                <IonButtons slot="start" class="ion-margin-horizontal">
+                <IonButtons slot="start" className="ion-margin-horizontal">
                     {window.location.pathname !== '/' && <HomeBtnComponent/>}
                 </IonButtons>
                 <IonButtons slot="end">
