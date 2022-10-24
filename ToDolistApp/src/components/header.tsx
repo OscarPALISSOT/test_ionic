@@ -5,14 +5,14 @@ import HomeBtnComponent from './homebtn'
 import DarkModeToogleComponent from "./DarkModeToogle";
 import HeadTitleComponent from "./HeadTitle";
 
-const HeaderComponent: React.FC<any> = (props: {hideBackButton: boolean}) => {
+const HeaderComponent: React.FC = () => {
     return (
         <IonHeader>
             <IonToolbar>
                 <IonButtons slot="start">
-                    {props.hideBackButton ? <BackBtnComponent/> : null}
+                    <BackBtnComponent/>
                     <HeadTitleComponent/>
-                    <HomeBtnComponent/>
+                    {window.location.pathname != '/' && <HomeBtnComponent/>}
                 </IonButtons>
                 <IonButtons slot="end">
                     <DarkModeToogleComponent/>
